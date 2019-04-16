@@ -4,10 +4,10 @@
   "version": "1.0.5",
   "description": "Telegram",
   "main": "index.js",
-  "author": "Stefan Malzner <stefan@adlk.io>",
+  "author": "Benjamin Staneck <staneck@gmail.com>",
   "license": "MIT",
   "config": {
-    "serviceURL": "https://web.telegram.org",
+    "serviceURL": "https://evgeny-nadymov.github.io/telegram-react/",
     "hasDirectMessages": true,
     "hasNotificationSound": true
   }
