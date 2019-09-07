@@ -1,11 +1,18 @@
-#app {
+/* #app {
     background: #303030 !important;
-}
+} */
 .page {
     border: none !important;
     max-width: 100% !important;
     box-shadow: none !important;
+    height: 100%;
+    border-radius: 0 !important;
 }
+
+.message-wrapper {
+    max-width: 100% !important;
+}
+
 .footer-wrapper {
     display: none !important;
 }

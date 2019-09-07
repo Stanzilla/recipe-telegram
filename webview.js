@@ -3,9 +3,15 @@ const path = require('path');
 module.exports = (Franz) => {
   const getMessages = function getMessages() {
     let count = 0;
-    const searchElement = document.querySelector('.im_dialogs_search_field');
-    if (searchElement && searchElement.value === '') {
-      const elements = document.querySelectorAll('.im_dialog_badge:not(.ng-hide):not(.im_dialog_badge_muted)');
+    let badgeCount = 0;
+    const elementLoaded = document.querySelector('.header-master')
+    const searchElement = document.querySelector('#header-search-inputbox');
+    const badgeText = document.querySelector('.dialog-badge-text');
+    if (badgeText) {
+      badgeCount = document.querySelector('.dialog-badge-text').textContent;
+    }
+    if (elementLoaded) {
+      const elements = document.querySelectorAll('.dialog-badge:not(.jss169)');
       if (elements) {
         for (let i = 0; i < elements.length; i += 1) {
           if (elements[i].innerHTML !== 0) {
@@ -15,7 +21,7 @@ module.exports = (Franz) => {
       }
     }
 
-    Franz.setBadge(count);
+    Franz.setBadge(badgeCount);
   };
 
   Franz.injectCSS(path.join(__dirname, 'service.css'));

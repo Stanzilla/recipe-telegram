@@ -1,8 +1,8 @@
 {
-  "id": "telegram",
-  "name": "Telegram",
+  "id": "telegram-react",
+  "name": "telegram-react",
   "version": "1.0.5",
-  "description": "Telegram",
+  "description": "Themed Telegram",
   "main": "index.js",
   "author": "Benjamin Staneck <staneck@gmail.com>",
   "license": "MIT",
